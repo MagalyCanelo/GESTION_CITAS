@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Krub&family=Nunito:wght@700;1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <!-- parte de danny-->
@@ -48,12 +51,12 @@
     <div class="Especialidad__diplomado">
       <p>
         <b> Especilidad: </b> Obstetricia y ginecologia <br />
-        -COP 35584 <br />
-        -Licenciada en obstetricia <br />
-        -Diplomado en ecografia obstetrica y control prenatal <br />
-        -Diplomado en monitoreo electronico fetal <br />
-        -Diplomado en metodos anticonceptivos <br />
-        -Curso en insercion y retiro de implante subdermico <br />
+        - COP 35584 <br />
+        - Licenciada en obstetricia <br />
+        - Diplomado en ecografia obstetrica y control prenatal <br />
+        - Diplomado en monitoreo electronico fetal <br />
+        - Diplomado en metodos anticonceptivos <br />
+        - Curso en insercion y retiro de implante subdermico <br />
       </p>
     </div>
 
@@ -116,38 +119,52 @@
             </a>
         </div>
 
-      <h2>Contáctanos</h2>
-
-      <section>
-        <p>
-          <strong>PISCO</strong>
-          <br />
-          Calle Augusto B. Leguia #327
-          <br />
-          <strong>Teléfono:</strong>
-          056 - 637 991
-          <br />
-          <strong>Celular:</strong>
-          952 448 500
-          <br />
-          <strong>Horario de Atención:</strong>
-          <br />
-          Lun - Viernes: 8 am - 5 pm
-          <br />
-          Sab - Dom: Cerrado
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d969.0151075859462!2d-76.2077810542083!3d-13.714789816035811!2m3!1f0
-                !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110656259667481%3A0x8bd1ed4ac850ffb6!2sCentro%20Ecogr%C3%A1fico%20Reina%20Isabel!5e0
-                !3m2!1sen!2spe!4v1694479743699!5m2!1sen!2spe"
-          width="700"
-          height="350"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+      <section class="contactanos container">
+        <h2 class="contactanos__titulo">Contáctanos</h2>
+        <div class="row">
+          <div class="contactanos__info col-lg-4">
+            <div class="contactanos__items">  
+              <strong>PISCO</strong> 
+              <p>
+                Calle Augusto B. Leguia #327
+              </p>
+            </div>
+            <div class="contactanos__items">  
+              <strong>Teléfono</strong> 
+              <p>
+                056 - 637 991
+              </p>
+            </div>
+            <div class="contactanos__items">  
+              <strong>Celular</strong> 
+              <p>
+                952 448 500
+              </p>
+            </div>
+            <div class="contactanos__items">  
+              <strong>Horario de Atención</strong>
+              <p class="contactanos__lundom">
+                Lun - Viernes: 8 am - 5 pm
+              </p>
+              <p class="contactanos__lundom">
+                Sab - Dom: Cerrado
+              </p>
+            </div>
+          </div>
+          <div class="contactanos__mapa col-lg-8">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d969.0151075859462!2d-76.2077810542083!3d-13.714789816035811!2m3!1f0
+                    !2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110656259667481%3A0x8bd1ed4ac850ffb6!2sCentro%20Ecogr%C3%A1fico%20Reina%20Isabel!5e0
+                    !3m2!1sen!2spe!4v1694479743699!5m2!1sen!2spe"
+              width="700"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -232,23 +249,55 @@
 
       <section>
         <h3>Contáctanos</h3>
-        <p>
-          <strong>PISCO</strong>
-          <br />
-          Calle Augusto B. Leguia #327
-          <br />
-          <strong>Teléfono:</strong>
-          056 - 637 991
-          <br />
-          <strong>Celular:</strong>
-          952 448 500
-          <br />
-          <strong>Horario de Atención:</strong>
-          <br />
-          Lun - Viernes: 8 am - 5 pm
-          <br />
-          Sab - Dom: Cerrado
-        </p>
+        <div class="footer__info col-lg-4">
+          <div class="footer__items">
+            <div class="footer__icotit">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p>
+                <strong>PISCO</strong> 
+              </p>
+            </div>
+            <p>
+              Calle Augusto B. Leguia #327
+            </p>
+          </div>
+          <div class="footer__items">
+            <div class="footer__icotit">
+              <i class="bi bi-telephone-fill"></i>
+              <p>
+                <strong>Teléfono</strong> 
+              </p>
+            </div>
+            <p>
+              056 - 637 991
+            </p>
+          </div>
+          <div class="footer__items">
+            <div class="footer__icotit">
+              <i class="bi bi-phone-fill"></i>
+              <p>
+                <strong>Celular</strong>
+              </p>
+            </div>
+            <p>
+              952 448 500
+            </p>
+          </div>
+          <div class="footer__items">
+            <div class="footer__icotit">
+              <i class="bi bi-alarm-fill"></i>
+              <p>
+                <strong>Horario de Atención</strong>
+              </p>
+            </div>
+            <p class="footer__lundom">
+              Lun - Viernes: 8 am - 5 pm
+            </p>
+            <p class="footer__lundom">
+              Sab - Dom: Cerrado
+            </p>
+          </div>
+        </div>
       </section>
     </footer>
   </body>

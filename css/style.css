@@ -6,7 +6,7 @@
     --blanco: #FFFFFF;
     --oscuro: #212121;
     --gris: #E5E5E5;
-    
+
     --fuenteParrafo: 'Krub', sans-serif;
     --fuenteHeading: 'Nunito', sans-serif;
 }
@@ -15,31 +15,42 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 1.6rem;
     font-family: var(--fuenteParrafo);
-    background-color: var(--azul);
+    background-color: var(--blanco);
 }
 
 /** Globales **/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--fuenteHeading);
 }
+
 h1 {
     font-size: 3.8rem;
 }
+
 h2 {
     font-size: 2.8rem;
 }
+
 h3 {
     font-size: 1.8rem;
 }
+
 a {
     text-decoration: none;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -49,12 +60,15 @@ a {
 .no-padding {
     padding: 0;
 }
+
 .no-margin {
     margin: 0;
 }
+
 .centrar-texto {
     text-align: center;
 }
+
 .alinear-centro {
     display: flex;
     justify-content: center;
@@ -67,18 +81,21 @@ a {
     font-size: 4rem;
     font-weight: 1000;
 }
+
 @media (min-width: 768px) {
     .tres-columnas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }   
+    }
 }
+
 @media (min-width: 1140px) {
     .tres-columnas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }  
+    }
 }
+
 .ecografia {
     margin: 2rem;
     border-radius: 1.5rem;
@@ -86,38 +103,47 @@ a {
     background-color: var(--rosado);
     transition: all .4s ease;
 }
+
 .ecografia__imagen {
     height: 20rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
+
 .imagen-uno {
     background-image: url(../img/imagenObstetrica.jpg);
 }
+
 .imagen-dos {
     background-image: url(../img/imagenTransvaginal.jpg);
 }
+
 .imagen-tres {
     background-image: url(../img/imagenPrenatal.jpg);
 }
+
 @media (min-width: 768px) {
     .ecografia:hover {
-        box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
         transform: translateY(-5%);
-    }   
+    }
 }
+
 .ecografia img {
     height: 21rem;
 }
+
 .ecografia .ecografia__descripcion {
     padding: 1.5rem;
     text-align: center;
 }
+
 .ecografia .ecografia__descripcion p {
     line-height: 1.6;
     color: var(--gris);
 }
+
 .ecografia .ecografia__descripcion h3 {
     margin: .5rem 0 1.5rem 0;
     color: var(--blanco);
@@ -138,10 +164,12 @@ a {
     transition: all .3s ease-out;
     margin-bottom: 1.5rem;
 }
-.alinear-centro  .ecografia__boton:hover {
+
+.alinear-centro .ecografia__boton:hover {
     width: 20rem;
 }
-.alinear-centro  .ecografia__boton .ecografia__icono {
+
+.alinear-centro .ecografia__boton .ecografia__icono {
     display: inline-block;
     height: 6rem;
     width: 6rem;
@@ -150,15 +178,70 @@ a {
     line-height: 6rem;
     text-align: center;
 }
-.alinear-centro  .ecografia__boton i {
+
+.alinear-centro .ecografia__boton i {
     font-size: 2.5rem;
     line-height: 6rem;
     color: var(--blanco);
 }
-.alinear-centro  .ecografia__boton span {
+
+.alinear-centro .ecografia__boton span {
     font-size: 2rem;
     font-weight: 500;
     line-height: 6rem;
     margin-left: 1rem;
     color: var(--blanco);
+}
+
+/** Magaly **/
+
+.contactanos__titulo {
+    color: var(--azulClaro);
+    font-size: 4rem;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+.contactanos__info {
+    padding: 3.5rem 0 0 3rem;
+}
+
+.contactanos__items {
+    padding-bottom: 0.8rem;
+}
+
+.contactanos__items>p {
+    margin-bottom: 0.1rem;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__icotit {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__icotit>p {
+    margin-left: 0.7rem;
+    margin-bottom: 0.4rem;
+}
+
+.footer__lundom {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+}
+
+.footer__mapa {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
