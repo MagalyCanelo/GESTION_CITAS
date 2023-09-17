@@ -213,6 +213,10 @@ a {
     padding-bottom: 0.8rem;
 }
 
+.contactanos__items>strong {
+    margin-bottom: 5rem;
+}
+
 .contactanos__items>p {
     margin-bottom: 0.1rem;
 }
