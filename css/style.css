@@ -1,0 +1,164 @@
+/** Custom Properties **/
+:root {
+    --rosado: #C65791;
+    --azul: #0E2865;
+    --azulClaro: #005F9C;
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --gris: #E5E5E5;
+    
+    --fuenteParrafo: 'Krub', sans-serif;
+    --fuenteHeading: 'Nunito', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--fuenteParrafo);
+    background-color: var(--azul);
+}
+
+/** Globales **/
+h1, h2, h3 {
+    font-family: var(--fuenteHeading);
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/** Utilidades **/
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+.alinear-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Ecografia - Caña **/
+.ecografia-titulo {
+    color: var(--blanco);
+    font-size: 4rem;
+    font-weight: 1000;
+}
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+@media (min-width: 1140px) {
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}
+.ecografia {
+    margin: 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-color: var(--rosado);
+    transition: all .4s ease;
+}
+.ecografia__imagen {
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.imagen-uno {
+    background-image: url(../img/imagenObstetrica.jpg);
+}
+.imagen-dos {
+    background-image: url(../img/imagenTransvaginal.jpg);
+}
+.imagen-tres {
+    background-image: url(../img/imagenPrenatal.jpg);
+}
+@media (min-width: 768px) {
+    .ecografia:hover {
+        box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+        transform: translateY(-5%);
+    }   
+}
+.ecografia img {
+    height: 21rem;
+}
+.ecografia .ecografia__descripcion {
+    padding: 1.5rem;
+    text-align: center;
+}
+.ecografia .ecografia__descripcion p {
+    line-height: 1.6;
+    color: var(--gris);
+}
+.ecografia .ecografia__descripcion h3 {
+    margin: .5rem 0 1.5rem 0;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/** Ecografia boton - Caña **/
+.alinear-centro .ecografia__boton {
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    margin: 0 .5rem;
+    overflow: hidden;
+    background-color: var(--azulClaro);
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    margin-bottom: 1.5rem;
+}
+.alinear-centro  .ecografia__boton:hover {
+    width: 20rem;
+}
+.alinear-centro  .ecografia__boton .ecografia__icono {
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    line-height: 6rem;
+    text-align: center;
+}
+.alinear-centro  .ecografia__boton i {
+    font-size: 2.5rem;
+    line-height: 6rem;
+    color: var(--blanco);
+}
+.alinear-centro  .ecografia__boton span {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 6rem;
+    margin-left: 1rem;
+    color: var(--blanco);
+}

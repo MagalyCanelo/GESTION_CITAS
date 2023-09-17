@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centro Ecológico | Reina Isabel</title>
-    <!-- holaaaaa -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Nunito:wght@700;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <!-- parte de danny-->
@@ -52,53 +56,65 @@
         -Curso en insercion y retiro de implante subdermico <br />
       </p>
     </div>
-    <main>
-      <h2>¿Qué Ecografias Realizamos?</h2>
 
-      <section>
-        <a href="#">
-          <img src="img/ecografiaObstetrica.jpg" alt="imagenObstétrica" />
-          <h3>Ecografía Obstétrica</h3>
-          <p>
-            Visualización del embrión dentro del útero materno. Se trata de un
-            método de diagnóstico imprescindible durante el embarazo.
-          </p>
-          <input type="submit" value="Reservar" />
-        </a>
-      </section>
+    <main class="contenedor">
+      <h2 class="centrar-texto ecografia-titulo">¿Qué ecografías realizamos?</h2>
 
-      <section>
-        <a href="#">
-          <img src="img/ecografiaTransvaginal.jpg" alt="imagenTransvaginal" />
-          <h3>Ecografía Transvaginal</h3>
-          <p>
-            Es un examen utilizado para ver el útero, los ovarios, las trompas,
-            el cuello uterino y el área pélvica de la mujer.
-          </p>
-          <input type="submit" value="Reservar" />
-        </a>
-      </section>
-
-      <section>
-        <a href="#">
-          <img src="img/controlPrenatal.jpg" alt="imagenPrenatal" />
-          <h3>Control Prenatal</h3>
-          <p>
-            Prevenir, orientar, disminuir los factores de riesgo, detectar
-            problemas de salud y tratarlos a tiempo
-          </p>
-          <input type="submit" value="Reservar" />
-        </a>
-      </section>
-
-      <section>
-        <a href="#">
-          <img src="img/papanicolau.png" alt="imagenPapanicolau" />
-          <h3>Papanicolau</h3>
-          <p>Previene y detecta temprano el cáncer de cuello uterino.</p>
-          <input type="submit" value="Reservar" />
-        </a>
-      </section>
+        <div class="tres-columnas">
+            <a href="#">
+                <div class="ecografia">
+                    <div class="ecografia__imagen imagen-uno"></div>
+                    <div class="ecografia__descripcion">
+                        <h3 class="no-margin">Ecografía Obstetrica</h3>
+                        <p class="no-margin">Visualización del embrión dentro del útero materno. Se trata de un método de diagnóstico durante el embarazo.</p>
+                    </div>
+                    <div class="alinear-centro">
+                        <div class="ecografia__boton">
+                            <div class="ecografia__icono">
+                                <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                            </div>
+                            <span>Reservar</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="ecografia">
+                    <div class="ecografia__imagen imagen-dos"></div>
+                    <div class="ecografia__descripcion">
+                        <h3 class="no-margin">Ecografía Transvaginal</h3>
+                        <p class="no-margin">Es un examen utilizado para ver el útero, los ovarios, las trompas, el cuello uterino y el área pélvica de la mujer.</p>
+                    </div>
+                    <div class="alinear-centro">
+                        <div class="ecografia__boton">
+                            <div class="ecografia__icono">
+                                <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                            </div>
+                            <span>Reservar</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="ecografia">
+                    <div class="ecografia__imagen imagen-tres"></div>
+                    <div class="ecografia__descripcion">
+                        <h3 class="no-margin">Control Prenatal</h3>
+                        <p class="no-margin">Prevenir, orientar, disminuir los factores de riesgo, detectar problemas de salud y tratarlos a tiempo.</p>
+                    </div>
+                    <div class="alinear-centro">
+                        <div class="ecografia__boton">
+                            <div class="ecografia__icono">
+                                <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                            </div>
+                            <span>Reservar</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
 
       <h2>Contáctanos</h2>
 
