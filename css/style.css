@@ -1,14 +1,24 @@
 /** Custom Properties **/
 :root {
-    --rosado: #C65791;
-    --azul: #0E2865;
-    --azulClaro: #005F9C;
+    --vanilla-ice: #f4dbd6;
+    --turbo: #f4e407;
+    --light-wisteria: #ca7dcd;
+    --ming: #2f6179;
+    --morado: #ac64d4;
+    --rosado: #f44c84; 
+    --deep-blush: #e45ca4;
+    --mauvelous: #ee8eb0;
+    --froly: #f36794;
+
+
+    
     --blanco: #FFFFFF;
     --oscuro: #212121;
     --gris: #E5E5E5;
 
     --fuenteParrafo: 'Krub', sans-serif;
     --fuenteHeading: 'Nunito', sans-serif;
+
 }
 
 html {
@@ -49,6 +59,159 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+.navbar {
+    padding: 0.2rem;
+    margin-left: -1rem;
+    position: absolute;
+}
+
+.navbar-collapse{
+    justify-content: space-between ;
+}
+
+.container-fluid{
+    background-color: var(--blanco);
+    
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+        
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: var(--blanco);
+    }
+}
+
+
+.nav-item{
+    padding: 0.4rem;
+    font-family: var(--fuenteHeading);
+    margin:auto;
+
+}
+
+.nav-link:hover {
+    color: var(--morado);
+}
+
+.banner{
+  width: 100%;
+}
+
+.sidebar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-close{
+    margin-left: 12rem;
+}
+
+@media (max-width:600px) {
+    .btn-close {
+        margin-left: 8rem;
+    }
+}
+
+.logo_menupequeño{
+    height: 80px;
+    width: 190px;
+    padding-left: 3.4rem;
+    padding-top: 1rem;
+}
+
+.sobremi__titulo {
+    color: var(--moradoClaro);
+    font-size: 4rem;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+.descripcion__obstetra{
+ font-family: var(--fuenteParrafo);
+ font-size: 2rem;
+}
+
+.container-info-obstetra{
+margin-left: 9rem;
+margin-right: 9rem;
+ padding: 2rem;
+ border-radius: 10px;
+ box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, .10);
+}
+
+@media (max-width:600px){
+    .container-info-obstetra{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.movimiento_nombre_profesion{
+margin-left: 1rem;
+}
+
+.Nombre__profesion {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    font-family: var(--fuenteHeading);
+    margin-top: 9rem;
+}
+
+@media (max-width:600px) {
+    .Nombre__profesion {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+}
+
+.profesion{
+    font-size: 2rem;
+    font-family: var(--fuenteHeading);
+    color: var(--morado)
+}
+
+.foto_obstetra{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 300px;
+ height: 300px;
+ border-radius: 50%;
+ margin-top: 4.5rem;
+ border: 0.8rem solid var(--rosado);
+}
+
+@media (max-width:600px) {
+    .foto_obstetra {
+        margin-bottom: -4.5rem;
+    }
+}
+
+
+.Especialidad__diplomado{
+    font-family: var(--fuenteParrafo);
+    font-size: 1.7rem;
+    padding: 3rem;
+    padding-bottom: 9rem;
+    margin-top: 6.2rem;
+}
+
+@media (max-width:600px) {
+    .Especialidad__diplomado {
+        margin-bottom: -8rem;
+    }
 }
 
 .contenedor {
@@ -158,7 +321,7 @@ a {
     width: 6rem;
     margin: 0 .5rem;
     overflow: hidden;
-    background-color: var(--azulClaro);
+    background-color: var(--morado);
     border-radius: 5rem;
     cursor: pointer;
     transition: all .3s ease-out;
@@ -196,7 +359,7 @@ a {
 /** Magaly **/
 
 .contactanos__titulo {
-    color: var(--azulClaro);
+    color: var(--moradoClaro);
     font-size: 4rem;
     font-weight: 1000;
     display: flex;
