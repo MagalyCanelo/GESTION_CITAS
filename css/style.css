@@ -5,13 +5,13 @@
     --light-wisteria: #ca7dcd;
     --ming: #2f6179;
     --morado: #ac64d4;
-    --rosado: #f44c84; 
+    --rosado: #f44c84;
     --deep-blush: #e45ca4;
     --mauvelous: #ee8eb0;
     --froly: #f36794;
 
 
-    
+
     --blanco: #FFFFFF;
     --oscuro: #212121;
     --gris: #E5E5E5;
@@ -67,19 +67,19 @@ a {
     position: absolute;
 }
 
-.navbar-collapse{
-    justify-content: space-between ;
+.navbar-collapse {
+    justify-content: space-between;
 }
 
-.container-fluid{
+.container-fluid {
     background-color: var(--blanco);
-    
+
 }
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
-        
+
     }
 }
 
@@ -90,10 +90,10 @@ a {
 }
 
 
-.nav-item{
+.nav-item {
     padding: 0.4rem;
     font-family: var(--fuenteHeading);
-    margin:auto;
+    margin: auto;
 
 }
 
@@ -101,17 +101,17 @@ a {
     color: var(--morado);
 }
 
-.banner{
-  width: 100%;
+.banner {
+    width: 100%;
 }
 
-.sidebar{
+.sidebar {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.btn-close{
+.btn-close {
     margin-left: 12rem;
 }
 
@@ -121,7 +121,7 @@ a {
     }
 }
 
-.logo_menupequeño{
+.logo_menupequeño {
     height: 80px;
     width: 190px;
     padding-left: 3.4rem;
@@ -129,7 +129,7 @@ a {
 }
 
 .sobremi__titulo {
-    color: var(--moradoClaro);
+    color: var(--rosado);
     font-size: 4rem;
     font-weight: 1000;
     display: flex;
@@ -138,28 +138,28 @@ a {
     height: 8rem;
 }
 
-.descripcion__obstetra{
- font-family: var(--fuenteParrafo);
- font-size: 2rem;
+.descripcion__obstetra {
+    font-family: var(--fuenteParrafo);
+    font-size: 2rem;
 }
 
-.container-info-obstetra{
-margin-left: 9rem;
-margin-right: 9rem;
- padding: 2rem;
- border-radius: 10px;
- box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, .10);
+.container-info-obstetra {
+    margin-left: 9rem;
+    margin-right: 9rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, .10);
 }
 
-@media (max-width:600px){
-    .container-info-obstetra{
+@media (max-width:600px) {
+    .container-info-obstetra {
         margin-left: 2rem;
         margin-right: 2rem;
     }
 }
 
-.movimiento_nombre_profesion{
-margin-left: 1rem;
+.movimiento_nombre_profesion {
+    margin-left: 1rem;
 }
 
 .Nombre__profesion {
@@ -176,21 +176,21 @@ margin-left: 1rem;
     }
 }
 
-.profesion{
+.profesion {
     font-size: 2rem;
     font-family: var(--fuenteHeading);
     color: var(--morado)
 }
 
-.foto_obstetra{
- display: flex;
- align-items: center;
- justify-content: center;
- width: 300px;
- height: 300px;
- border-radius: 50%;
- margin-top: 4.5rem;
- border: 0.8rem solid var(--rosado);
+.foto_obstetra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 4.5rem;
+    border: 0.8rem solid var(--rosado);
 }
 
 @media (max-width:600px) {
@@ -200,7 +200,7 @@ margin-left: 1rem;
 }
 
 
-.Especialidad__diplomado{
+.Especialidad__diplomado {
     font-family: var(--fuenteParrafo);
     font-size: 1.7rem;
     padding: 3rem;
@@ -240,7 +240,7 @@ margin-left: 1rem;
 
 /** Ecografia - Caña **/
 .ecografia-titulo {
-    color: var(--blanco);
+    color: var(--rosado);
     font-size: 4rem;
     font-weight: 1000;
 }
@@ -359,7 +359,7 @@ margin-left: 1rem;
 /** Magaly **/
 
 .contactanos__titulo {
-    color: var(--moradoClaro);
+    color: var(--rosado);
     font-size: 4rem;
     font-weight: 1000;
     display: flex;
@@ -390,11 +390,14 @@ margin-left: 1rem;
     align-items: stretch;
 }
 
-.footer {
-    /* margin-top: 5rem; */
-    background-color: #B841C2;
+.footer__mediano {
+    display: none;
+}
+
+.footer__grande {
+    margin-top: -5rem;
+    background-color: #E95796;
     position: relative;
-    bottom: 5rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
     width: 100%;
@@ -417,6 +420,10 @@ margin-left: 1rem;
 .footer__lundom {
     display: flex;
     flex-direction: column;
+}
+
+.footer__links {
+    margin-bottom: -1.2rem;
 }
 
 .footer__items {
@@ -473,6 +480,47 @@ margin-left: 1rem;
     left: 0;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .contactanos__titulo {
+        font-size: 3.5rem;
+    }
+
+    .contactanos__items {
+        font-size: 1.55rem;
+    }
+
+    .footer__servicios {
+        padding-right: 4rem;
+    }
+
+    .footer__links {
+        padding-right: 4rem;
+    }
+
+    .olas {
+        top: -4rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: block;
+        margin-top: -4rem;
+        background-color: #E95796;
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 599px) {
+    /* Una sola linea */
+}
 
 @media screen and (max-width: 990px) {
     .contactanos__titulo {
