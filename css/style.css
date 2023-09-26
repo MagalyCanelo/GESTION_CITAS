@@ -111,20 +111,22 @@ a {
     align-content: center;
 }
 
-.btn-close {
+.btn-salir {
     margin-left: 12rem;
+    padding-right: 3rem;
 }
 
 @media (max-width:600px) {
-    .btn-close {
-        margin-left: 8rem;
+    .btn-salir {
+        margin-left: 12rem;
+        
     }
 }
 
 .logo_menupequeño {
     height: 80px;
     width: 190px;
-    padding-left: 3.4rem;
+    padding-left: 5.7rem;
     padding-top: 1rem;
 }
 
@@ -138,15 +140,28 @@ a {
     height: 8rem;
 }
 
+@media (max-width:600px) {
+    .descripcion__obstetra {
+        font-size: 2.8rem;
+    }
+}
+
 .descripcion__obstetra {
     font-family: var(--fuenteParrafo);
     font-size: 2rem;
+}
+
+@media (max-width:600px) {
+    .descripcion__obstetra {
+        font-size: 1.55rem;
+    }
 }
 
 .container-info-obstetra {
     margin-left: 9rem;
     margin-right: 9rem;
     padding: 2rem;
+    padding-bottom: 7rem;
     border-radius: 10px;
     box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, .10);
 }
@@ -155,6 +170,7 @@ a {
     .container-info-obstetra {
         margin-left: 2rem;
         margin-right: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -173,6 +189,7 @@ a {
     .Nombre__profesion {
         margin-left: 0;
         margin-top: 3rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -181,6 +198,13 @@ a {
     font-family: var(--fuenteHeading);
     color: var(--morado)
 }
+
+@media (max-width:600px) {
+    .profesion {
+        font-size: 1.55rem;
+    }
+}
+
 
 .foto_obstetra {
     display: flex;
@@ -196,6 +220,8 @@ a {
 @media (max-width:600px) {
     .foto_obstetra {
         margin-bottom: -4.5rem;
+        width: 220px;
+        height: 250px;
     }
 }
 
@@ -211,6 +237,7 @@ a {
 @media (max-width:600px) {
     .Especialidad__diplomado {
         margin-bottom: -8rem;
+        font-size: 1.5rem;
     }
 }
 
