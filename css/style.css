@@ -5,6 +5,7 @@
     --light-wisteria: #ca7dcd;
     --ming: #2f6179;
     --morado: #ac64d4;
+    --moradoOscuro: #8235ac;
     --rosado: #f44c84;
     --deep-blush: #e45ca4;
     --mauvelous: #ee8eb0;
@@ -117,9 +118,15 @@ a {
 }
 
 @media (max-width:600px) {
+<<<<<<< HEAD
     .btn-close {
         margin-left: 4rem;
         
+=======
+    .btn-salir {
+        margin-left: 12rem;
+
+>>>>>>> b60101f2c30332d7804db2bb63b1d85afd3f495a
     }
 }
 
@@ -196,7 +203,7 @@ a {
 .profesion {
     font-size: 2rem;
     font-family: var(--fuenteHeading);
-    color: var(--morado)
+    color: var(--moradoOscuro)
 }
 
 @media (max-width:600px) {
@@ -210,11 +217,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     border-radius: 50%;
     margin-top: 4.5rem;
     border: 0.8rem solid var(--rosado);
+}
+
+.foto_obstetra>img {
+    max-width: 100%;
 }
 
 @media (max-width:600px) {
@@ -270,6 +281,7 @@ a {
     color: var(--rosado);
     font-size: 4rem;
     font-weight: 1000;
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -290,7 +302,7 @@ a {
     margin: 2rem;
     border-radius: 1.5rem;
     overflow: hidden;
-    background-color: var(--rosado);
+    background-color: #ef6493;
     transition: all .4s ease;
 }
 
@@ -337,7 +349,7 @@ a {
 .ecografia .ecografia__descripcion h3 {
     margin: .5rem 0 1.5rem 0;
     color: var(--blanco);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -352,7 +364,7 @@ a {
     border-radius: 5rem;
     cursor: pointer;
     transition: all .3s ease-out;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .alinear-centro .ecografia__boton:hover {
@@ -396,7 +408,16 @@ a {
 }
 
 .contactanos__info {
+    display: block;
     padding: 3.5rem 0 0 3rem;
+}
+
+.contactanos__info__tablet {
+    display: none;
+}
+
+.contactanos__info__celular {
+    display: none;
 }
 
 .contactanos__items {
@@ -417,17 +438,27 @@ a {
     align-items: stretch;
 }
 
+.footer__pequeño {
+    display: none;
+}
+
 .footer__mediano {
     display: none;
 }
 
 .footer__grande {
-    margin-top: -5rem;
+    margin-top: -6rem;
     background-color: #E95796;
     position: relative;
     padding-top: 3rem;
     padding-bottom: 2rem;
     width: 100%;
+}
+
+.footer__logo__grande>img {
+    height: 8rem;
+    margin-bottom: 2rem;
+    filter: brightness(200%);
 }
 
 .footer__indivi {
@@ -436,8 +467,15 @@ a {
 }
 
 .footer__indivi,
-.footer__servicios__items>a {
+.footer__servicios__items>a,
+.footer__redes>a {
     color: var(--blanco);
+}
+
+.footer__redes>a {
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
 }
 
 .footer__links,
@@ -451,6 +489,10 @@ a {
 
 .footer__links {
     margin-bottom: -1.2rem;
+}
+
+.footer__links__grande {
+    margin-right: 4rem;
 }
 
 .footer__items {
@@ -492,7 +534,7 @@ a {
 .olas {
     display: inline-block;
     position: relative;
-    bottom: 5rem;
+    bottom: 6rem;
     width: 100%;
     padding-bottom: 18%;
     vertical-align: middle;
@@ -507,51 +549,18 @@ a {
     left: 0;
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    .contactanos__titulo {
-        font-size: 3.5rem;
-    }
-
-    .contactanos__items {
-        font-size: 1.55rem;
-    }
-
-    .footer__servicios {
-        padding-right: 4rem;
-    }
-
-    .footer__links {
-        padding-right: 4rem;
-    }
-
-    .olas {
-        top: -4rem;
-    }
-
-    .footer__grande {
-        display: none;
-    }
-
-    .footer__mediano {
-        display: block;
-        margin-top: -4rem;
-        background-color: #E95796;
-        position: relative;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        width: 100%;
-    }
-
-}
-
-
-@media screen and (min-width: 400px) and (max-width: 599px) {
-    /* Una sola linea */
-}
-
 @media screen and (max-width: 990px) {
     .contactanos__titulo {
         height: 6rem;
+        font-size: 3.8rem;
+    }
+
+    .contactanos__info {
+        display: none;
+    }
+
+    .contactanos__info__tablet {
+        display: block;
     }
 
     .contactanos__items {
@@ -559,6 +568,7 @@ a {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        font-size: 1.55rem;
     }
 
     .contactanos__items>strong {
@@ -571,6 +581,26 @@ a {
 
     .contactanos__mapa {
         padding-top: 2rem;
+        width: 620px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .footer__logo__mediano>img {
+        height: 7rem;
+        margin-top: 1.7rem;
+        margin-bottom: 1rem;
+        filter: brightness(200%);
+    }
+
+    .footer__redes>a {
+        font-size: 2.2rem;
+        padding-right: 1.3rem;
+        padding-left: 1rem;
+    }
+
+    .footer__items>p {
+        text-align: center;
     }
 
     .footer__indivi>h3 {
@@ -578,4 +608,147 @@ a {
         margin-bottom: 1.5rem;
     }
 
+    .footer__servicios {
+        padding-right: 4.5rem;
+    }
+
+    .footer__links {
+        padding-right: 4rem;
+    }
+
+    .footer__links__info {
+        padding-right: 4rem;
+    }
+
+    .olas {
+        top: 2.3rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: block;
+        margin-top: 2.3rem;
+        background-color: #E95796;
+        position: relative;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .olas {
+        top: 3rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: block;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .olas {
+        top: 4rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: block;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .olas {
+        top: 5rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: block;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .contactanos__titulo {
+        height: 5rem;
+        font-size: 3.6rem;
+    }
+
+    .contactanos__items {
+        font-size: 1.6rem;
+    }
+
+    .contactanos__mapa {
+        padding-top: 2rem;
+        width: 360px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .contactanos__info__tablet {
+        display: none;
+    }
+
+    .contactanos__info__celular {
+        display: block;
+    }
+
+
+    .olas {
+        top: 21rem;
+    }
+
+    .footer__grande {
+        display: none;
+    }
+
+    .footer__mediano {
+        display: none;
+    }
+
+    .footer__logo__pequeño>img {
+        height: 6rem;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        filter: brightness(200%);
+    }
+
+    .footer__pequeño {
+        display: block;
+        margin-top: 21rem;
+        background-color: #E95796;
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .footer__indivi>h3 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__links {
+        padding-right: 0;
+    }
+
+    .footer__servicios {
+        padding-right: 0;
+    }
 }
