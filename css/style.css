@@ -111,14 +111,14 @@ a {
     align-content: center;
 }
 
-.btn-salir {
+.btn-close {
     margin-left: 12rem;
-    padding-right: 3rem;
+    padding-right: 30rem;
 }
 
 @media (max-width:600px) {
-    .btn-salir {
-        margin-left: 12rem;
+    .btn-close {
+        margin-left: 4rem;
         
     }
 }
