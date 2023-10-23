@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
+
+:root {
+  --vanilla-ice: #f4dbd6;
+  --turbo: #f4e407;
+  --light-wisteria: #ca7dcd;
+  --ming: #2f6179;
+  --morado: #ac64d4;
+  --moradoOscuro: #8235ac;
+  --rosado: #f44c84;
+  --rosadoOscuro: #EC4F84;
+  --mauvelous: #ee8eb0;
+  --froly: #f36794;
+
+  --blanco: #FFFFFF;
+  --oscuro: #212121;
+  --gris: #E5E5E5;
+
+  --fuenteParrafo: 'Krub', sans-serif;
+  --fuenteHeading: 'Nunito', sans-serif;
+}
+
+html {
+  overflow: hidden;
+}
+
+/* HEADER */
+.franja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22rem;
+  margin: 0 auto;
+}
+
+.circulo {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  border-radius: 50%;
+  background-color: #f7f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+  border: 1px solid #e0e0e0;
+  margin: 1rem;
+}
+
+.circulo-activo {
+  background-color: #4778cc;
+  color: #fff;
+}
+
+.linea-separadora {
+  width: 150px;
+  height: 1.1px;
+  background-color: #e0e0e0;
+}
+
+.linea__h {
+  border: 0;
+  border-top: 1px solid #a0a0a0;
+  width: 100%;
+  margin: 0;
+}
+
+/* MAIN */
+.fechaHora__superior {
+  font-family: var(--fuenteHeading);
+  margin: 1.5rem;
+}
+
+.fechaHora__superior>h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.8rem 0;
+}
+
+.volver {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.volver>a {
+  text-decoration: none;
+  color: var(--oscuro);
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 0.8rem;
+  gap: 5px;
+  margin-bottom: 0.5rem;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.6rem;
+  margin: 0 0.5rem;
+  height: 3rem;
+  font-family: var(--fuenteHeading);
+}
+
+.fechaHora__cuadro {
+  padding-right: 5rem;
+}
+
+.fechaHora__titulo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--fuenteHeading);
+  margin: 0.6rem 0.7rem;
+}
+
+.fechaE {
+  margin: 0.8rem auto;
+}
+
+.fechaE__titulo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: var(--fuenteHeading);
+}
+
+.nav-button {
+  padding: 0.6rem 1rem 0.8rem 1rem;
+  font-size: 2rem;
+  background-color: var(--blanco);
+  color: var(--oscuro);
+  border: none;
+  cursor: pointer;
+}
+
+.month-year {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: var(--fuenteHeading);
+}
+
+.day {
+  cursor: pointer;
+  font-family: var(--fuenteParrafo);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day.selected {
+  background-color: var(--rosado);
+  color: var(--blanco);
+}
+
+.day:hover {
+  background-color: #efefef;
+}
+
+.fechaHora {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container {
+  margin: 1rem 1.5rem;
+  padding: 0;
+
+}
+
+.linea {
+  border: 0;
+  border-top: 1px solid #a0a0a0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Hora */
+
+.hour-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  margin-top: 0.8rem;
+  width: 20.2rem;
+}
+
+.hour-button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.hour-button.selected {
+  background-color: #FFE1EB;
+  color: var(--rosado);
+  border: 1px solid var(--rosado);
+}
+
+/* ASIDE */
+
+.visible {
+  visibility: visible;
+}
+
+.reserva-resumen {
+  background-color: #F7F7F7;
+  height: 89vh;
+}
+
+.reserva-resumen .contenido-reserva {
+  padding: 3rem 2.5rem;
+}
+
+.reserva-resumen .contenido-reserva h3 {
+  font-family: var(--fuenteHeading);
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  font-weight: bold;
+}
+
+.reserva-resumen .contenido-reserva .formulario-resumen {
+  background-color: #FFF;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 5px 15px 0px rgba(117, 117, 117, 0.49);
+}
+
+.descripcion-empresa {
+  margin-top: 1.5rem;
+}
+
+.linea__a {
+  margin: 0.5rem 0 1.5rem 0;
+  border-top: 1px solid #000000;
+}
+
+.linea__b {
+  margin: -0.3rem 0 1.5rem 0;
+  border-top: 1px solid #000000;
+}
+
+.contenido-reserva .formulario-resumen h4 {
+  font-family: var(--fuenteHeading);
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.contenido-reserva .formulario-resumen .descripcion-reserva {
+  display: flex;
+  align-items: center;
+}
+
+.descripcion-reserva .descripcion-empresa h4 {
+  color: #464646;
+}
+
+.formulario-resumen .descripcion-resumen .descripcion-resumen__ecografia h4 {
+  text-transform: uppercase;
+  color: #464646;
+}
+
+.descripcion-resumen__ecografia>h4 {
+  padding-bottom: 1rem;
+}
+
+.descripcion-resumen .descripcion-resumen__ecografia,
+.descripcion-resumen .descripcion-resumen__ecografia2 {
+  font-family: var(--fuenteHeading);
+  display: flex;
+  align-items: center;
+}
+
+.descripcion-resumen .descripcion-resumen__ecografia {
+  justify-content: space-between;
+}
+
+.resumen__fechaHora {
+  display: flex;
+  flex-direction: row;
+}
+
+#selectedHour {
+  margin: 0;
+}
+
+.resumen__ls {
+  margin: 0 0.5rem;
+}
+
+.boton-reserva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-reserva .boton {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #4675C5;
+  margin: 1rem 4.5rem 0.8rem 4.5rem;
+  width: 100%;
+  transition: background-color .5s ease;
+}
+
+.boton-reserva .boton:hover {
+  cursor: pointer;
+  background-color: #5086E4;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha y Hora | Reina Isabel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dycalendarjs@1.2.1/css/dycalendar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fechaHora.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title></title>    
+</head>
+<body>
+  <header>
+    <div class="franja">
+      <div class="circulo circulo-activo">1</div>
+      <div class="linea-separadora"></div>
+      <div class="circulo">2</div>
+      <div class="linea-separadora"></div>
+      <div class="circulo">3</div>
+    </div>
+  <header>
+  <hr class="linea__h">
+  <main class="fechaHoraContainer">
+    <div class="row">
+      <div class="fechaHora__cuadro total col-7">
+        <div class="fechaHora__superior">
+          <div class="volver">
+            <i class="fa-solid fa-chevron-left" style="color: #212121;"></i>
+            <a href="index.html">Volver</a>
+          </div>
+          <h2>Selecciona el Día y la Hora</h2>
+        </div>
+        <div class="fechaHora container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="fechaHora__titulo">Fecha y Hora</h2>
+            </div>
+          </div>
+          <hr class="linea">
+          <div class="row">
+            <div class="col-6 calendario">
+              <div id="header">
+                <button class="nav-button" onclick="prevMonth()">&#8249;</button>
+                <span id="month-year" class="month-year"></span>
+                <button class="nav-button" onclick="nextMonth()">&#8250;</button>
+              </div>
+              <div id="calendar"></div>
+            </div>
+            <div class="fechaE col-6">
+              <h2 class="fechaE__titulo">FECHA</h2>
+              <div class="hour-grid">
+                <button class="hour-button" onclick="selectHour(1)">12:00</button>
+                <button class="hour-button" onclick="selectHour(2)">1:00</button>
+                <button class="hour-button" onclick="selectHour(3)">2:00</button>
+                <button class="hour-button" onclick="selectHour(4)">3:00</button>
+                <button class="hour-button" onclick="selectHour(5)">4:00</button>
+                <button class="hour-button" onclick="selectHour(6)">5:00</button>
+              </div>
+              <p hidden>Hora Seleccionada: <span id="selected-hour"></span></p>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="total col-5">
+        <aside class="reserva-resumen visible">
+          <div class="contenido-reserva">
+            <h3>Resumen</h3>
+            <div class="formulario-resumen">
+              <div class="descripcion-reserva">
+                <img src="img/icon.png" alt="imagenLogo">
+                <div class="descripcion-empresa">
+                    <h4>Reina Isabel Perú</h4>
+                    <p>Pisco</p>
+                </div>
+              </div>
+              <hr class="linea__a">
+              <div class="descripcion-resumen">
+                <div class="descripcion-resumen__ecografia">
+                  <h4>Ecografía Obstétrica</h4>
+                  <p>150 PEN</p>
+                </div>
+                <div class="descripcion-resumen__ecografia2">
+                  <p>
+                    45 minutos
+                    <ul class="resumen__fechaHora" id="selectedDateTime">
+                      <li id="selectedDate"></li>
+                      <p class="resumen__ls">|</p>
+                      <p id="selectedHour"></p>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <hr class="linea__b">
+              <div class="descripcion-resumen">
+                <div class="descripcion-resumen__ecografia">
+                  <h4>Total</h4>
+                  <p>150 PEN</p>
+                </div>
+              </div>
+              <div class="boton-reserva">
+                <input class="boton" type="submit" value="Continuar">
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  
+<script src="https://cdn.jsdelivr.net/npm/dycalendarjs@1.2.1/js/dycalendar.js"></script>
+<script src="js/fechaHora.js"></script>
+</body>
+</html>
